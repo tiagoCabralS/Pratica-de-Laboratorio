@@ -1,0 +1,33 @@
+td{
+    border-style: solid;
+    border-radius: 5%;
+    width: 150px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+tr{
+    height: 50px;
+}
+
+#coluna{
+        border-color: red;
+        border-width: 3px;
+}
+
+#primavera{
+    border-color: green;
+}
+
+#verao{
+    border-color: rgb(218, 184, 33);
+}
+
+#outono{
+    border-color: purple;
+}
+
+#inverno{
+    border-color: blue;
+}
