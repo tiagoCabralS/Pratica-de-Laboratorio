@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 45px;
+    margin-left: 50px;
+    width: 1200px;
+    height: 550px;
+    color: gray;
+    font-size: 60px;
+}
+
+#geral{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+#amarelo{
+    border-color: yellow;
+    color: red;
+    background-color: yellow;
+}
+
+#cinza{
+    border-color: lightgray;
+    color: black;
+    background-color: lightgray;
+}
+
+#roxo{
+    background-color: rgb(167, 100, 230);
+    color: blue;
+    border-color: rgb(167, 100, 230);
+}
+
+#feriado{
+    border-color: white;
+    background-color: white;
+    color: green;
+}
+
+.padrao-dias{
+    width: 150px;
+    border-radius: 12%;
+    border-style: solid;
+    border-width: 5px; 
+}
+
+.diasemana{
+    height: 40px;
+    font-size: 26px;
+}
+
+.diames{
+    position: relative;
+    margin-top: 3px;
+    top: -410px;
+    height: 50px;
+    font-size: 40px;  
+}
+
+.pri{
+    position: relative;
+    left: 25px;
+}
+
+.altpri-sem{
+    top: 1px;
+}
+
+.altpri-mes{
+    top: -615px;
+}
+
+.seg{
+    position: relative;
+    left: 186px;
+}
+
+.altseg-sem{
+    top: -49px;
+}
+
+.altseg-mes{
+    top: -300px;
+}
+
+.ter{
+    position: relative;
+    left: 347px;
+}
+
+.altter-mes{
+    top: -930px;
+}
+
+.altter-sem{
+    top: -98px;
+}
+
+.qua{
+    position: relative;
+    left: 508px;
+}
+
+.altqua-mes{
+    top: -1245px;
+}
+
+.altqua-sem{
+    top: -148px;
+}
+
+.qui{
+    position: relative;
+    left: 669px;
+}
+
+.altqui-mes{
+    top: -1560px;
+}
+
+.altqui-sem{
+    top: -198px;
+}
+
+.sex{
+    position: relative;
+    left: 830px;
+}
+
+.altsex-mes{
+    top: -1875px;
+}
+
+.altsex-sem{
+    top: -248px;
+}
+
+.sab{
+    position: relative;
+    left: 991px;
+}
+
+.altsab-mes{
+    top: -2190px;
+}
+
+.altsab-sem{
+    top: -298px;
+}
+
+.legenda{
+    margin-top: -100px;
+    text-align: center;
+}
