@@ -1,0 +1,310 @@
+#paus{
+    width: 340px;
+    height: 380px;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#copas{
+    width: 340px;
+    height: 380px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 341px;
+    top: 0px;
+}
+#ouro{
+    width: 340px;
+    height: 380px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0px;
+    top: 381px;
+}
+#espada{
+    width: 340px;
+    height: 380px;
+    background-color: #000000;
+    position: absolute;
+    left: 341px;
+    top: 381px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+img
+{
+    width: 75px;
+    height: 150px;
+    object-fit: contain;
+}
+div{
+    width: 75px;
+    height: 150px;
+    border-radius: 15px;
+}
+.card1011{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.card1021{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.card1031{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+.card1041{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+}
+.card1051{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+}
+.card1061{
+    position: absolute;
+    top: 100px;
+    left: 110px;
+}
+.card1071{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.card1081{
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+.card1091{
+    position: absolute;
+    top: 160px;
+    left: 170px;
+}
+.card1101{
+    position: absolute;
+    top: 180px;
+    left: 190px;
+}
+.card1111{
+    position: absolute;
+    top: 200px;
+    left: 210px;
+}
+.card1121{
+    position: absolute;
+    top: 220px;
+    left: 230px;
+}
+.card1131{
+    position: absolute;
+    top: 240px;
+    left: 250px;
+}
+.card2011{
+    position: absolute;
+    top: 240px;
+    left: 250px;
+}
+.card2021{
+    position: absolute;
+    top: 220px;
+    left: 230px;
+}
+.card2031{
+    position: absolute;
+    top: 200px;
+    left: 210px;
+}
+.card2041{
+    position: absolute;
+    top: 180px;
+    left: 190px;
+}
+.card2051{
+    position: absolute;
+    top: 160px;
+    left: 170px;
+}
+.card2061{
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+.card2071{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.card2081{
+    position: absolute;
+    top: 100px;
+    left: 110px;
+}
+.card2091{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+}
+.card2101{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+}
+.card2111{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}    
+.card2121{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}        
+.card2131{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.card3011{
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+.card3021{
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+.card3031{
+    position: absolute;
+    top: 40px;
+    left: 210px;
+}
+.card3041{
+    position: absolute;
+    top: 60px;
+    left: 190px;
+}
+.card3051{
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+.card3061{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.card3071{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.card3081{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+}
+.card3091{
+    position: absolute;
+    top: 160px;
+    left: 90px;
+}
+.card3101{
+    position: absolute;
+    top: 180px;
+    left: 70px;
+}
+.card3111{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}    
+.card3121{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+}        
+.card3131{
+    position: absolute;
+    top: 240px;
+    left: 10px;
+}
+.card4011{
+    position: absolute;
+    top: 240px;
+    left: 10px;
+}
+.card4021{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+}
+.card4031{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.card4041{
+    position: absolute;
+    top: 180px;
+    left: 70px;
+}
+.card4051{
+    position: absolute;
+    top: 160px;
+    left: 90px;
+}
+.card4061{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+}
+.card4071{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.card4081{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.card4091{
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+.card4101{
+    position: absolute;
+    top: 60px;
+    left: 190px;
+}
+.card4111{
+    position: absolute;
+    top: 40px;
+    left: 210px;
+}
+.card4121{
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+.card4131{
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
