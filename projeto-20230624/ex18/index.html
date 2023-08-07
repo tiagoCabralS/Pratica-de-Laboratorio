@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n1 = window.prompt("Digite um número: ")
+        contprimo = 0
+        i = 0
+
+        while (i <= n1)
+        {
+            if (n1 % i == 0)
+            {
+                contprimo = contprimo + 1
+            }
+            i++
+        }
+        if (contprimo != 2)
+        {
+            document.write("O número não é primo.")
+        }
+        else
+        {
+            document.write("O número é primo.")
+        }
+    </script>
+</body>
+</html>

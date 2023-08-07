@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Milhas </title>
+</head>
+<body>
+    <script>
+        milhas = parseFloat(window.prompt("Milhas marítimas: "));
+
+        metros = milhas * 1852;
+
+        km = metros / 1000;
+
+        document.write(`${milhas} milhas marítimas = ${km}km`);
+        /*O resultado com virgula será mostrado utilizando ponto devido ao formato americano*/
+    </script>
+</body>
+</html>

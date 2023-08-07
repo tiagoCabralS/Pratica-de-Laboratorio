@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Escolar</title>
+</head>
+<body>
+    <script>
+        p1 = parseFloat(window.prompt("Digite P1: "))
+        p2 = parseFloat(window.prompt("Digite P2: "))
+
+        media = ((p1 + 2 * p2) / 3).toFixed(2)
+
+        document.write(`A média final é: ${media}<br>`)
+
+        if (media >= 6)
+        {
+            sit = "APROVADO"
+        }
+        else
+        {
+            sit = "REPROVADO"
+        }
+        
+        document.write(`Situação: ${sit}`)
+    </script>
+</body>
+</html>

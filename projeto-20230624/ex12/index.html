@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação Peso Ideal</title>
+</head>
+<body>
+    <script>
+        peso = parseFloat(window.prompt("Peso: "))
+        altura = parseFloat(window.prompt("Altura: "))
+
+        relacao = peso / altura
+
+        if (relacao < 20)
+        {
+            sit = "ABAIXO DO PESO"
+        }
+        if (relacao >= 20) 
+        {
+            sit = "PESO IDEAL"
+        }
+        if (relacao >= 25) 
+        {
+            sit = "ACIMA DO PESO"
+        }
+        
+        document.write(relacao + "<br>")
+        document.write(`Situação: ${sit}`)
+    </script>
+</body>
+</html>

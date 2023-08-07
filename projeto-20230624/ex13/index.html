@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script lang="JavaScript">
+        var n1, n2, n3
+        var controle
+
+        n1 = parseFloat(window.prompt("Primeiro número: "))
+        n2 = parseFloat(window.prompt("Segundo número: "))
+        n3 = parseFloat(window.prompt("Terceiro número: "))
+
+    if (n1 + n2 > n3 && n2 + n3 > n1 && n1 + n3 > n2)
+    {
+    if (n1 == n2 && n1 == n3)
+        {
+            document.write("Classificação: Equilatero")
+            document.write("<br><img src='imagens/equilatero.png' alt=''>")
+                            
+        }
+    else 
+    if (n1 != n2 && n2 != n3)
+        {
+            document.write("Classificação: Escaleno")
+            document.write("<br><img src='imagens/escaleno.png' alt=''>")
+                            
+        }
+    else
+        {
+            document.write("Classificação: Isóceles")
+            document.write("<br><img src='imagens/isoceles.png' alt=''>")
+                            
+        }
+    }
+    else 
+    {
+        document.write("Não é possível fazer um triângulo com essas retas.")
+        document.write("<br><img src='imagens/x.png' alt=''>")
+                    
+    }
+    </script>
+</body>
+</html>

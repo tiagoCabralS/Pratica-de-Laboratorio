@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Série de Fibonacci </title>
+</head>
+<body>
+    <style ></style>
+    <script>
+        var prox, p1, p2, cont
+        cont = 2
+        p1 = 1
+        p2 = 1
+        document.write(p1 + ", " + p2 + ", ")
+
+        
+
+        while (cont <= 30) {
+            prox = p1 + p2 
+            p2 = p1
+            p1 = prox
+            cor = 1
+            
+            contprimo = 0
+            i = 0
+
+            while (i <= prox)
+            {
+                if (prox % i == 0)
+                {
+                    contprimo = contprimo + 1
+                }
+                i++
+            }
+            if (contprimo != 2)
+            {
+                document.write(`${prox}, `)
+            }
+            if (contprimo == 2)
+            {
+                document.write(` <font color="#008000">${prox}</font>,`)
+            }
+            cont += 1
+        }
+    </script>
+</body>
+</html>

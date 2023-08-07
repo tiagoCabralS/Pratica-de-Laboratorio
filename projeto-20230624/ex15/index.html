@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1, n2
+
+        n1 = parseFloat(window.prompt("Primeiro valor: "))
+        n2 = parseFloat(window.prompt("Segundo valor: "))
+
+        while (n2 <= n1)
+        {
+            n2 = parseFloat(window.prompt("Digite um número maior que o primeiro para ser o segundo número: "))
+        }
+
+        document.write("Primeiro número: " + n1)
+        document.write("<br>Segundo número: " + n2)
+    </script>
+</body>
+</html>
