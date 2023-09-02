@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="Javascript">
+        function media()
+        {
+            v1 = parseFloat(document.frm.valor1.value)
+            v2 = parseFloat(document.frm.valor2.value)
+            v3 = parseFloat(document.frm.valor3.value)
+            v4 = parseFloat(document.frm.valor4.value)
+
+            media = (v1 + v2 + v3 + v4) / 4
+            
+            document.getElementById("paragrafo").innerHTML = media
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        1° valor: <input type="text" name="valor1"> <br>
+        2° valor: <input type="text" name="valor2"> <br>
+        3° valor: <input type="text" name="valor3"> <br>
+        4° valor: <input type="text" name="valor4"> <br>
+
+        <input type="button" name="botao" value="Resolver" onclick="media()">
+    </form>
+
+    <p id="paragrafo"></p>
+</body>
+</html>

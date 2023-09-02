@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos</title>
+
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+
+    <script>
+        function tri()
+        {
+            var v1, v2, v3
+
+            v1 = parseFloat(document.frm.valor1.value)
+            v2 = parseFloat(document.frm.valor2.value)
+            v3 = parseFloat(document.frm.valor3.value)
+
+            if (v1 + v2 > v3 && v2 + v3 > v1 && v1 + v3 > v2)
+            {
+                if (v1 == v2 && v2 == v3)
+                {
+                    document.getElementById("paragrafo").innerHTML = "É possível formar um Triângulo <b>Equilatero</b>"
+                    document.getElementById("imag").innerHTML = "<img src='imagens/equilatero.png'>"
+                }
+                else
+                if(v1 != v2 && v2 != v3)
+                {
+                    document.getElementById("paragrafo").innerHTML = "É possível formar um Triângulo <b>Escaleno</b>"
+                    document.getElementById("imag").innerHTML = "<img src='imagens/escaleno.png'>"
+                }
+                else
+                {
+                    document.getElementById("paragrafo").innerHTML = "É possível formar um Triângulo <b>Isóceles</b>"
+                    document.getElementById("imag").innerHTML = "<img src='imagens/isoceles.png'>"
+                }
+            }
+            else
+            {
+                document.getElementById("paragrafo").innerHTML = "Não é possível formar um triângulo com esses valores."
+                document.getElementById("imag").innerHTML = "<img src='imagens/x.png'>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        1º Valor: <input type="text" name="valor1"> <br>
+        2º Valor: <input type="text" name="valor2"> <br>
+        3º Valor: <input type="text" name="valor3"> <br>
+        <input type="button" value="OK" onclick="tri()">
+    </form>
+
+    <p id="paragrafo"></p>
+
+    <p id="imag"></p>
+
+    <script>
+        
+    </script>
+</body>
+</html>
