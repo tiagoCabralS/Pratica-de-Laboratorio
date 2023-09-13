@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Estudantes</title>
+    <script>
+        function enviar()
+        {
+            prontuario = document.frm.prontuario.value
+            nome = document.frm.nome.value
+            email = document.frm.email.value
+            curso = document.frm.curso.value
+            if (document.frm.radPeriodo.value == "M")
+            {
+                periodo = "Manhã"
+            }
+            else
+            if (document.frm.radPeriodo.value == "T")
+            {
+                periodo = "Tarde"
+            }
+            else
+            {
+                periodo = "Noite"
+            }
+            
+            extensao = ""
+            //extensao += (document.frm.extensao1.checked?document.frm.extensao1.value: "")
+            if (document.frm.extensao1.checked)
+            {extensao += document.frm.extensao1.value}
+            //extensao += ((document.frm.extensao2.checked && extensao != "")?", ":"")
+            //extensao += (document.frm.extensao2.checked?document.frm.extensao2.value: "")
+            if (document.frm.extensao2.checked)
+            {
+                if (extensao != "")
+                {extensao += ", "}
+                extensao += document.frm.extensao2.value
+            }            
+            //extensao += ((document.frm.extensao3.checked && extensao != "")? ", ": "")
+            //extensao += (document.frm.extensao.checked?document.frm.extensao3.value: "")
+            if (document.frm.extensao3.checked)
+            {
+                if (extensao != "")
+                {extensao += ", "}
+                extensao += document.frm.extensao3.value
+            }
+
+            satisfacao = document.frm.satisfacao.value
+
+            document.write(`Prontuario: ${prontuario}<br>`)
+            document.write(`Nome: ${nome}<br>`)
+            document.write(`E-mail: ${email}<br>`)
+            document.write(`Curso: ${curso}<br>`)
+            document.write(`Período: ${periodo}<br>`)
+            document.write(`Extensão: ${extensao}<br>`)
+            document.write(`Satisfação: ${satisfacao}<br>`)
+        }
+    </script>
+</head>
+<body>
+        <form name="frm">
+            prontuário: <input name="prontuario" type="text"> <br>
+            nome: <input name="nome" type="text"> <br>
+            e-mail: <input name="email" type="text"> <br>
+            curso: 
+            <select name="curso" >
+                <option value="CTA">Técnico em Automação Industrial</option>
+                <option value="CTI">Técnico em Informática                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               - CTI</option>
+                <option value="CTE">Técnico em Eventos</option>
+                <option value="EJA">Educação de Jovens e Adultos</option>
+                <option value="CSA">Tecnologia em Automação Industrial</option>
+                <option value="TUR">Tecnologia em Gestão de Turismo - <i>curso em extinção</i></option>
+                <option value="ADS">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                <option value="LET">Licenciatura em Letras - Português</option>
+                <option value="LMA">Licenciatura em Matemática</option>
+                <option value="ECA">Engenharia de Controle e Automação</option>
+                <option value="TUR">Bacharelado em Turismo</option>
+            </select> <br>
+            Período: 
+                <input type="radio" name="radPeriodo" value="M"> Manhã
+                <input type="radio" name="radPeriodo" value="T"> Tarde
+                <input type="radio" name="radPeriodo" value="N"> Noite <br>
+            Extensão: 
+                <input type="checkbox" name="extensao1" value="Música"> Música
+                <input type="checkbox" name="extensao2" value="Pintura"> Pintura
+                <input type="checkbox" name="extensao3" value="Teatro"> Teatro <br>
+            Nível de Satisfação: <input name="satisfacao" type="range" min="0" max="100"> <br>
+            <input type="button" value="Enviar" onclick="enviar()">
+            <input type="reset" value="Limpar">
+        </form>
+    <script>
+        
+    </script>
+</body>
+</html>
