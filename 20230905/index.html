@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso Estudantes</title>
     <script>
+        function mostrar()
+        {
+            var nome, prontuario, satisfacao, email, curso, ingresso, periodo, extensao
+
+            prontuario = document.frm.prontuario.value
+            nome = document.frm.nome.value
+            email = document.frm.email.value
+            curso = document.frm.curso.value
+            periodo = document.frm.radPeriodo.value
+            satisfacao = document.frm.satisfacao.value
+            agora = new Date()
+            ingresso = agora.getDate() + "/" + agora.getMonth() + "/" + agora.getFullYear()
+
+            document.write("<table id='tabela' align='center'>")
+            document.write("<tr>")
+                document.write("<td><img style='width: 80px;' src='imagens/logo.png'></td>")
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write(`<td id='prontuario' colspan='2'>Prontuário: ${prontuario}</td>`)
+                document.write(`<td colspan='1'>Satisfação: ${satisfacao}%</td>`)
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write(`<td>Nome: ${nome}</td>`)
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write(`<td>E-mail: ${email}</td>`)
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write(`<td>Curso: ${curso}</td>`)
+                document.write(`<td>Ingresso: ${ingresso}</td>`)
+            document.write("</tr>")
+            document.write("<tr>")
+                document.write(`<td>Período: ${periodo}<br>`)
+            document.write("</tr>")
+
+            document.write("<tr>")
+                document.write("<td>")
+                document.write(`Atividade de Extensão: ${extensao}<br>`)
+                document.write("</td>")
+            document.write("<tr></table>")
+        }
+
+        
         function enviar()
         {
             prontuario = document.frm.prontuario.value
@@ -48,13 +91,15 @@
 
             satisfacao = document.frm.satisfacao.value
 
-            document.write(`Prontuario: ${prontuario}<br>`)
-            document.write(`Nome: ${nome}<br>`)
-            document.write(`E-mail: ${email}<br>`)
-            document.write(`Curso: ${curso}<br>`)
-            document.write(`Período: ${periodo}<br>`)
-            document.write(`Extensão: ${extensao}<br>`)
-            document.write(`Satisfação: ${satisfacao}<br>`)
+            //document.write(`Prontuario: ${prontuario}<br>`)
+            //document.write(`Nome: ${nome}<br>`)
+            //document.write(`E-mail: ${email}<br>`)
+            //document.write(`Curso: ${curso}<br>`)
+            //document.write(`Período: ${periodo}<br>`)
+            //document.write(`Extensão: ${extensao}<br>`)
+            //document.write(`Satisfação: ${satisfacao}<br>`)
+
+            mostrar()
         }
     </script>
 </head>
