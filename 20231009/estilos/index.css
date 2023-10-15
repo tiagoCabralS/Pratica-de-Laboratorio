@@ -1,0 +1,22 @@
+body{
+        font-size: xx-large;
+        background-color: darkgrey;
+    }
+div{
+    width: 500px;
+    height: 500px;
+}
+
+.enviadora{
+    position: relative;
+    left: 510px;
+}
+.recebedora{
+    position: absolute;
+}
+.resultado{
+    background-color: aqua; 
+    width: 400px; 
+    height: 40px; 
+    margin: 10px;
+}
